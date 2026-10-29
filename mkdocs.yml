@@ -21,6 +21,10 @@ markdown_extensions:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
 
+# Only reached from the family invite email, see well-known/README.md.
+not_in_nav: |
+  /invite.md
+
 extra_css:
   - stylesheets/extra.css
 

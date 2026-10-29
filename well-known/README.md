@@ -17,10 +17,11 @@ strip the dot-directory. Edit them here; the workflow does the rest on push to
 | `assetlinks.json` | Android | `https://totly.plusmobileapps.com/.well-known/assetlinks.json` |
 | `apple-app-site-association` | iOS (no extension) | `https://totly.plusmobileapps.com/.well-known/apple-app-site-association` |
 
-- **`assetlinks.json`** — a `get_login_creds` statement for package
+- **`assetlinks.json`** — `get_login_creds` and `handle_all_urls` for package
   `com.plusmobileapps.totly`.
 - **`apple-app-site-association`** — a `webcredentials` section for
-  `Y89258SF5P.com.plusmobileapps.totly.Totly` (`Y89258SF5P` is the Team ID).
+  `Y89258SF5P.com.plusmobileapps.totly.Totly` (`Y89258SF5P` is the Team ID), and the `applinks`
+  section described below.
 
 ## Android signing fingerprint
 
@@ -42,13 +43,19 @@ Multiple fingerprints are allowed — it's a JSON array.
   AASA file.
 - **Android** — autofill needs nothing beyond the field hints.
 
-## Adding deep links later
+## App links: `/invite/`
 
-To open `https://totly.plusmobileapps.com/…` links in the app, add a
-`delegate_permission/common.handle_all_urls` statement to `assetlinks.json` (same
-package and fingerprints), an `applinks` section with `components` to the AASA,
-an `applinks:totly.plusmobileapps.com` associated domain on iOS, and an `https`
-`VIEW` intent filter with `android:autoVerify="true"` on Android.
+The family invite email links to `https://totly.plusmobileapps.com/invite/`. With the app installed
+iOS and Android open More › Notifications in the app instead; otherwise the link shows
+[`docs/invite.md`](../docs/invite.md), with store badges and a `totly://notifications` button.
+
+- **`apple-app-site-association`** — an `applinks` section matching `/invite` and `/invite/*` for
+  the same app ID. The app needs the `applinks:totly.plusmobileapps.com` associated domain.
+- **`assetlinks.json`** — the `delegate_permission/common.handle_all_urls` relation on the same
+  statement. The app has an `https` `VIEW` intent filter with `android:autoVerify="true"` for the
+  `/invite` path. Android only opens the link in the app once the fingerprint above is real.
+
+To open more paths in the app, add them to both the AASA `components` and the Android intent filter.
 
 ## Verify after deploy
 

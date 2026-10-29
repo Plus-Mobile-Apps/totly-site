@@ -1,4 +1,23 @@
 {
+  "applinks": {
+    "details": [
+      {
+        "appIDs": [
+          "Y89258SF5P.com.plusmobileapps.totly.Totly"
+        ],
+        "components": [
+          {
+            "/": "/invite",
+            "comment": "The family invite email, opens More › Notifications"
+          },
+          {
+            "/": "/invite/*",
+            "comment": "The family invite email, opens More › Notifications"
+          }
+        ]
+      }
+    ]
+  },
   "webcredentials": {
     "apps": [
       "Y89258SF5P.com.plusmobileapps.totly.Totly"
