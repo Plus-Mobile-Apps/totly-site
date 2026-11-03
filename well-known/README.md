@@ -23,25 +23,25 @@ strip the dot-directory. Edit them here; the workflow does the rest on push to
   `Y89258SF5P.com.plusmobileapps.totly.Totly` (`Y89258SF5P` is the Team ID), and the `applinks`
   section described below.
 
-## Android signing fingerprint
+## Android signing fingerprints
 
-`assetlinks.json` still has a `TODO_REPLACE_WITH_PLAY_APP_SIGNING_SHA256`
-placeholder. Replace it with the SHA-256 of the certificate that signs the
-**installed** app:
+`sha256_cert_fingerprints` lists the SHA-256 of every certificate that signs an **installed** app.
+Android only shares passwords and opens links for an app signed with one of them:
 
-- **Play App Signing (production):** Play Console → your app → *Test and release*
-  → *App integrity* → *App signing* → the **App signing key certificate** SHA-256.
-- **Local/debug testing:** `keytool -list -v -keystore ~/.android/debug.keystore
-  -alias androiddebugkey -storepass android` and add that SHA-256 too.
-
-Multiple fingerprints are allowed — it's a JSON array.
+- **Local/debug builds:** `C4:FF:…:71:CC`, from
+  `keytool -list -v -keystore ~/.android/debug.keystore -alias androiddebugkey -storepass android`.
+  Each machine's debug keystore differs, so add another one to test from a new machine.
+- **Play App Signing (production):** `FA:BC:…:E3:4B`, from Play Console → your app → *Test and
+  release* → *App integrity* → *App signing* → the **App signing key certificate** SHA-256. Not the
+  upload key, which Google replaces before the app reaches devices.
 
 ## App-side counterparts (in the `totly` repo, not here)
 
-- **iOS** — a `com.apple.developer.associated-domains` entitlement with
-  `webcredentials:totly.plusmobileapps.com`. Without it iOS never fetches the
-  AASA file.
-- **Android** — autofill needs nothing beyond the field hints.
+- **iOS** — `webcredentials:totly.plusmobileapps.com` in the
+  `com.apple.developer.associated-domains` entitlement (`iosApp/iosApp/iosApp.entitlements`), and
+  `textContentType` `.username`, `.password` or `.newPassword` on the sign in fields.
+- **Android** — an `asset_statements` `<meta-data>` in the manifest whose string includes this
+  `assetlinks.json`, and `ContentType` hints on the sign in fields.
 
 ## App links: `/invite/`
 
