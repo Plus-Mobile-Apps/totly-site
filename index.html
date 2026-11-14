@@ -1,0 +1,916 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      
+        <link rel="next" href="download/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="assets/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.8.1">
+    
+    
+      
+        <title>Totly</title>
+      
+    
+    
+      <link rel="stylesheet" href="assets/stylesheets/main.57a0d79d.min.css">
+      
+        
+        <link rel="stylesheet" href="assets/stylesheets/palette.fb2fffe2.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="stylesheets/extra.css">
+    
+    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#the-baby-tracker-for-the-whole-family" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="." title="Totly" class="md-header__button md-logo" aria-label="Totly" data-md-component="logo">
+      
+  <img src="assets/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Totly
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Home
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    
+  
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="download/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Download
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="faq/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  FAQ
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="privacy-policy/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Privacy Policy
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="terms-of-use/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Terms of Use
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="about/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  About
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+                
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" hidden>
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="." title="Totly" class="md-nav__button md-logo" aria-label="Totly" data-md-component="logo">
+      
+  <img src="assets/logo.png" alt="logo">
+
+    </a>
+    Totly
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="." class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#log-anything-in-a-tap" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Log anything in a tap
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#timers-you-can-see-from-anywhere" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Timers you can see from anywhere
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#see-the-whole-day-or-the-whole-week" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        See the whole day — or the whole week
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#know-when-the-next-nap-is-coming" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Know when the next nap is coming
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#growth-charts-with-who-percentiles" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Growth charts with WHO percentiles
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#a-guide-to-starting-solids" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        A guide to starting solids
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#share-with-your-family" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Share with your family
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#contact" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Contact
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="download/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Download
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="faq/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    FAQ
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="privacy-policy/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Privacy Policy
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="terms-of-use/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Terms of Use
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="about/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    About
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+                
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" hidden>
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#log-anything-in-a-tap" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Log anything in a tap
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#timers-you-can-see-from-anywhere" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Timers you can see from anywhere
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#see-the-whole-day-or-the-whole-week" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        See the whole day — or the whole week
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#know-when-the-next-nap-is-coming" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Know when the next nap is coming
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#growth-charts-with-who-percentiles" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Growth charts with WHO percentiles
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#a-guide-to-starting-solids" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        A guide to starting solids
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#share-with-your-family" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Share with your family
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#contact" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Contact
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+  
+
+
+
+
+<div class="hero">
+<div class="hero-text">
+<h1 id="the-baby-tracker-for-the-whole-family">The baby tracker for the whole family</h1>
+<p>Totly keeps track of your little one's day — sleep, nursing, bottles, diapers, growth and medicine — and
+shares it with everyone who helps care for them. Log anything in a couple of taps, see the day at a
+glance, and know when the next nap is coming.</p>
+<p><a class="md-button md-button--primary" href="download/">Download Totly</a>
+<a class="md-button" href="faq/">Read the FAQ</a></p>
+</div>
+<div class="hero-shot">
+<p><img alt="Totly's Home screen for Winter, with the back-to-sleep suggestion and activity tiles" class="screenshot" loading="lazy" src="assets/screenshots/home.png" /></p>
+</div>
+</div>
+<div class="feature">
+<div class="feature-text">
+<h2 id="log-anything-in-a-tap">Log anything in a tap</h2>
+<p>Home shows a tile for each activity with what you logged last and how long ago, so "when did she last
+eat?" is answered before you ask it.</p>
+<ul>
+<li><strong>Sleep and nursing timers</strong> — start a timer and put your phone down. Nursing has a timer for each
+  side and remembers which side you finished on. Forgot to start it? Enter the times by hand instead.</li>
+<li><strong>Bottles</strong> — breast milk, formula or other, in oz or ml.</li>
+<li><strong>Diapers</strong> — wet, poop, mixed or dry, with amounts, poop color and consistency, and diaper rash.</li>
+<li><strong>Growth and medicine</strong> — weight, height and head circumference, and doses of the medicines you
+  add.</li>
+<li><strong>Notes</strong> on any entry, and a <strong>Customize</strong> sheet to reorder, show or hide tiles — including
+  contractions, for before the baby arrives.</li>
+</ul>
+</div>
+<div class="feature-shot">
+<p><img alt="The nursing timer with a timer for each side" class="screenshot" loading="lazy" src="assets/screenshots/nursing.png" /></p>
+</div>
+</div>
+<div class="feature feature--reverse">
+<div class="feature-text">
+<h2 id="timers-you-can-see-from-anywhere">Timers you can see from anywhere</h2>
+<p>Running sleep and nursing timers show on the iPhone Lock Screen and Dynamic Island as Live
+Activities, and as ongoing notifications on Android — tap one to jump straight back to the timer.
+A <strong>Last Activity</strong> home screen widget and an <strong>Apple Watch app</strong> let you check in or log without
+opening the app.</p>
+</div>
+<div class="feature-shot">
+<p><img alt="A running nursing timer as a Live Activity on the iPhone Lock Screen" class="screenshot" loading="lazy" src="assets/screenshots/live-activity.jpg" /></p>
+</div>
+</div>
+<div class="feature">
+<div class="feature-text">
+<h2 id="see-the-whole-day-or-the-whole-week">See the whole day — or the whole week</h2>
+<p>The <strong>Reports</strong> tab shows every entry as a list with a daily summary, or as a day or week timeline you
+can pinch to zoom. Filter by activity to spot patterns in sleep or feedings, swipe an entry away to
+delete it (with undo), or tap it to edit.</p>
+</div>
+<div class="feature-shot feature-shot--pair">
+<p><img alt="The Reports tab listing today's activities with a daily summary" class="screenshot" loading="lazy" src="assets/screenshots/reports-list.png" />
+<img alt="The day timeline in Reports, with sleeps, feedings and diapers laid out by time" class="screenshot" loading="lazy" src="assets/screenshots/reports-day.png" /></p>
+</div>
+</div>
+<div class="feature feature--reverse">
+<div class="feature-text">
+<h2 id="know-when-the-next-nap-is-coming">Know when the next nap is coming</h2>
+<p>From when your baby last woke up and the wake windows typical for their age, Totly suggests when to
+put them down for their next nap or bedtime, right on the Home screen. The <strong>Sleep</strong> tab adds insights into the last 24 hours against the
+typical range, today's sleep at a glance, a 7-day day/night breakdown, and guides for each age and
+for topics like safe sleep.</p>
+</div>
+<div class="feature-shot">
+<p><img alt="The Sleep tab with the next nap suggestion and the last 24 hours of sleep" class="screenshot" loading="lazy" src="assets/screenshots/sleep.png" /></p>
+</div>
+</div>
+<div class="feature">
+<div class="feature-text">
+<h2 id="growth-charts-with-who-percentiles">Growth charts with WHO percentiles</h2>
+<p>Chart weight, height and head circumference against the WHO Child Growth Standards' 5th–95th
+percentiles from birth to 24 months, and see which percentile the latest measurement falls on. Enter
+measurements in lb and oz or kg, and inches or cm.</p>
+</div>
+<div class="feature-shot">
+<p><img alt="A weight chart plotted against the WHO percentiles, showing the 41st percentile" class="screenshot" loading="lazy" src="assets/screenshots/growth.png" /></p>
+</div>
+</div>
+<div class="feature feature--reverse">
+<div class="feature-text">
+<h2 id="a-guide-to-starting-solids">A guide to starting solids</h2>
+<p>The <strong>Food</strong> tab walks you through starting solids — the signs your baby is ready, purées and finger
+foods, introducing allergens, gagging vs. choking, and foods to avoid. Search the food library to see
+when each food can be offered, its allergens and choking risk, and how to serve it at every age.</p>
+</div>
+<div class="feature-shot">
+<p><img alt="The Food tab with guides for starting solids and a searchable food library" class="screenshot" loading="lazy" src="assets/screenshots/food.png" /></p>
+</div>
+</div>
+<h2 id="share-with-your-family">Share with your family</h2>
+<p>Invite a partner, grandparent or nanny by email and everyone sees the same babies and logs on their
+own phone. Changes sync in real time, so a timer started on one phone shows up on the other right away.
+Totly also works fully offline without an account — sign up only when you want to back up your logs
+or share them.</p>
+<h2 id="contact">Contact</h2>
+<p>Have questions or feedback? Reach out to us at <strong>support@plusmobileapps.com</strong>.</p>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+  
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": ".", "features": ["navigation.tabs", "navigation.sections"], "search": "assets/javascripts/workers/search.a7633da7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="assets/javascripts/bundle.a5f9d56c.min.js"></script>
+      
+    
+  </body>
+</html>
