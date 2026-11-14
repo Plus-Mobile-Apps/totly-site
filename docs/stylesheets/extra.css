@@ -39,3 +39,81 @@
   height: 60px;
   width: auto;
 }
+
+/* Home page: hero and alternating feature rows with phone screenshots */
+.hero,
+.feature {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 2.5rem;
+  margin: 2.5rem 0 3.5rem;
+}
+
+.feature--reverse {
+  grid-template-columns: auto minmax(0, 1fr);
+}
+
+.feature--reverse .feature-text {
+  order: 2;
+}
+
+.hero-text h1 {
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+}
+
+.hero-text p {
+  font-size: 0.95rem;
+}
+
+.hero-text .md-button {
+  margin: 0.5rem 0.5rem 0 0;
+}
+
+.feature-text h2 {
+  margin-top: 0;
+}
+
+.hero-shot p,
+.feature-shot p {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin: 0;
+}
+
+.md-typeset img.screenshot {
+  width: 240px;
+  height: auto;
+  aspect-ratio: 598 / 1300;
+  border-radius: 28px;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.14);
+}
+
+.feature-shot--pair img.screenshot {
+  width: 200px;
+}
+
+@media screen and (max-width: 44.9375em) {
+  .hero,
+  .feature,
+  .feature--reverse {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .feature--reverse .feature-text {
+    order: 0;
+  }
+
+  .md-typeset img.screenshot {
+    width: 220px;
+  }
+
+  .feature-shot--pair img.screenshot {
+    width: calc(50% - 0.5rem);
+    max-width: 200px;
+  }
+}
