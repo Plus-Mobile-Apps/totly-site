@@ -117,3 +117,33 @@
     max-width: 200px;
   }
 }
+
+/* FAQ: screenshots under an answer, alone or side by side */
+.md-typeset img.faq-shot {
+  display: block;
+  width: 220px;
+  height: auto;
+  margin: 1rem 0 1.5rem;
+  border-radius: 24px;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+.faq-shots p {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 1rem;
+  margin: 0;
+}
+
+.faq-shots img.faq-shot {
+  margin: 1rem 0 1.5rem;
+}
+
+@media screen and (max-width: 44.9375em) {
+  .faq-shots img.faq-shot {
+    width: calc(50% - 0.5rem);
+    max-width: 220px;
+  }
+}
