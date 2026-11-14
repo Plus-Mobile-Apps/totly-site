@@ -36,8 +36,9 @@ No. You can track your baby on a single device without signing in. Create an acc
 Sign in, then go to **More** → **Manage family**, pick your baby, start a family and invite members by email. They'll get an email and see the invite under **More** → **Notifications**, where they can accept it.
 
 <div class="faq-shots" markdown>
-![The More tab with Manage family and Notifications](assets/screenshots/more-family.png){ .faq-shot loading=lazy }
+![The More tab with the profile, Manage family and Notifications](assets/screenshots/more-family.png){ .faq-shot loading=lazy }
 ![Manage family with the owner, an invited member and the invite by email form](assets/screenshots/manage-family.png){ .faq-shot loading=lazy }
+![An invite to join Winter's family in Notifications, with Decline and Accept](assets/screenshots/notifications.png){ .faq-shot loading=lazy }
 </div>
 
 ### Do changes show up on everyone's phone?

@@ -20,7 +20,7 @@ glance, and know when the next nap is coming.
 </div>
 
 <div class="hero-shot" markdown>
-![Totly's Home screen with the next nap suggestion and activity tiles](assets/screenshots/home.png){ .screenshot loading=lazy }
+![Totly's Home screen for Winter, with the back-to-sleep suggestion and activity tiles](assets/screenshots/home.png){ .screenshot loading=lazy }
 </div>
 
 </div>
@@ -121,7 +121,7 @@ measurements in lb and oz or kg, and inches or cm.
 </div>
 
 <div class="feature-shot" markdown>
-![A weight chart plotted against the WHO percentiles, showing the 43rd percentile](assets/screenshots/growth.png){ .screenshot loading=lazy }
+![A weight chart plotted against the WHO percentiles, showing the 41st percentile](assets/screenshots/growth.png){ .screenshot loading=lazy }
 </div>
 
 </div>
