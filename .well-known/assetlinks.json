@@ -1,0 +1,16 @@
+[
+  {
+    "relation": [
+      "delegate_permission/common.get_login_creds",
+      "delegate_permission/common.handle_all_urls"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.plusmobileapps.totly",
+      "sha256_cert_fingerprints": [
+        "FA:BC:DB:3A:35:1B:5B:CC:89:2A:46:1B:05:E6:00:14:62:09:7E:F1:2A:B2:82:5A:F9:F9:CC:00:2D:8A:E3:4B",
+        "C4:FF:67:A7:1D:06:B4:C2:00:5F:66:0B:A2:37:9E:7C:FA:CC:79:53:F0:76:85:15:1E:7D:ED:82:7D:78:71:CC"
+      ]
+    }
+  }
+]
